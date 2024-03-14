@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Student Attendance</h1>
+
+    <!-- form element replace with div  -->
+    <div class="mb-3">
+      <!-- <form id="todo-form"> -->
+      <form id="todo-form">
+        <input type="text" id="taskName" class="form-control" placeholder="Enter Student Name">
+        <!-- </form> -->
+        <div class="mb-3">
+          <select id="taskUrgency" class="form-control">
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+          </select>
+        </div>
+        <input type="submit" id="addTodo" class="btn btn-success" value="Add student" />
+    </form>
+
+
+
+    <ul id="todoList" class="list-group">
+
+      <!-- Todo items will be appended here -->
+    </ul>
+
+
+
+    <div>
+      <button id="save-btn" class="btn btn-success mt-3">Save</button>
+    </div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"
+    integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Including data.js and script.js -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
